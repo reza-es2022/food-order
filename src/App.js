@@ -8,7 +8,7 @@ function App() {
   return (
     <CartProvider>
       {isCartShown && <div>Cart...</div>}
-      <Header />
+      <Header onShowCart={() => setIsCartShown(true)} />
       <main>
         <Meals />
       </main>
